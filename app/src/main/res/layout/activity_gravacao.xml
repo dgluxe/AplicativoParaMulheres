@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gravacao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDA0DD"
+    tools:context=".GravacaoActivity">
+
+
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Gravações de áudios"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- EditText para Entrada de Texto -->
+    <EditText
+        android:id="@+id/txtCADNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Digite o nome da gravação"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/txtHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Primeira Imagem e Texto -->
+    <ImageButton
+        android:id="@+id/btPlay1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/play"
+        android:contentDescription="Tocar áudio 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtCADNome"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/txtDate1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="21/09/2025 : 21:20:10"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/btPlay1"
+        app:layout_constraintTop_toTopOf="@id/btPlay1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Segunda Imagem e Texto -->
+    <ImageButton
+        android:id="@+id/btPlay2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/play"
+        android:contentDescription="Tocar áudio 2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btPlay1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/txtDate2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="30/09/2025 : 10:10:07"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/btPlay2"
+        app:layout_constraintTop_toTopOf="@id/btPlay2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Barra de Navegação -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:itemIconTint="@color/selector_color"
+        app:itemTextColor="@color/selector_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_casa"
+        android:icon="@drawable/casa"
+        android:title="Início" />
+    <item
+        android:id="@+id/nav_filmadora"
+        android:icon="@drawable/filmadora"
+        android:title="Fotos/vídeos" />
+    <item
+        android:id="@+id/nav_microfone"
+        android:icon="@drawable/microfone"
+        android:title="Gravações de áudio" />
+    <item
+        android:id="@+id/nav_config"
+        android:icon="@drawable/config"
+        android:title="Configurações" />
+</menu>
