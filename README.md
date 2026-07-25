@@ -1,6 +1,6 @@
 <div align="center">
 
-# **Vitalis**
+# **Vitalis Woman**
 
 **Aplicativo Android para apoio em situações de violência doméstica, com acionamento rápido de emergência, registro de evidências e proteção à vítima.**
 
@@ -87,9 +87,6 @@ O usuário pode criar sua conta com dados básicos, como:
 * nome completo
 * e-mail
 * senha
-* endereço
-* CEP
-* telefone
 * CPF
 
 Após o cadastro, o acesso é liberado por meio de login.
@@ -193,7 +190,6 @@ A área de configurações permite personalizar e proteger o aplicativo com opç
 
 ## 🧰 Tecnologias utilizadas
 
-> Ajuste esta seção conforme a stack real do seu repositório.
 
 * Android
 * Java ou Kotlin
@@ -243,7 +239,6 @@ Algumas telas e recursos já foram planejados e demonstrados, enquanto outras fu
 ## 👨‍💻 Integrantes
 
 * Diogo de Alcantara Brasil
-* Kauan Ferreira da Silva
 
 ---
 
